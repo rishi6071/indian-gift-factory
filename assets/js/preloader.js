@@ -1,8 +1,6 @@
 setTimeout(function() {
     $('.loading').fadeToggle();
-}, 150);
-
- 
+}, 450);
 
 let preloader = document.getElementById('loading');
 let loadFunction = function()   {
