@@ -71,21 +71,26 @@
 }
 
 .shop_products_btn {
-    color: white;
-    letter-spacing: 1px;
-    background-color: rebeccapurple;
-    padding: 8px 20px !important;
-    text-transform: capitalize;
-    font-variant: small-caps;
-    border-radius: 2px;
+  color: white;
+  letter-spacing: 1px;
+  background: rebeccapurple
+    linear-gradient(to right, rgb(66, 38, 141), rgb(99, 47, 151));
+  padding: 8px 20px !important;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  border-radius: 2px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .shop_products_btn .shop_icon {
-    transform: translateY(-0.5px) scale(1.2);
-    margin-right: 4px;
+  transform: translateY(-0.5px) scale(1.2);
+  margin-right: 4px;
 }
 
 .shop_products_btn:hover {
-    color: white;
-    background-color: rgb(78, 40, 116);
+  color: white;
+  background: rgb(78, 40, 116)
+    linear-gradient(to right, rgb(99, 47, 151), rgb(66, 38, 141));
 }

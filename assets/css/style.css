@@ -64,8 +64,9 @@ body {
   background: darkslategrey;
 }
 
-/******** || CATEGORIES ********/
-.categories_box .card {
+/******** || CATEGORIES & SHOP Products Page ********/
+.categories_box .card,
+.products_box .card {
   border: none;
   -webkit-box-shadow: 0px 0px 5px rgb(192, 192, 192);
   -moz-box-shadow: 0px 0px 5px rgb(192, 192, 192);
@@ -76,11 +77,17 @@ body {
   cursor: pointer;
 }
 
-.categories_box .card:hover {
+.products_box .card {
+  cursor: default;
+}
+
+.categories_box .card:hover,
+.products_box .card:hover {
   transform: translateY(-7px);
 }
 
-.categories_box .card-title {
+.categories_box .card-title,
+.products_box .card-title {
   text-align: center;
   letter-spacing: 1px;
   text-transform: capitalize;
