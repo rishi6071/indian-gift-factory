@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:wght@400;500&display=swap");
+
+/* 
+  font-family: 'Akaya Kanadaka', cursive;
+  font-family: 'Roboto', sans-serif;
+*/
+
+/* General Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/***** Scrollbar Styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/***** Section Heading */
+.section_heading {
+  font-family: "Akaya Kanadaka", cursive;
+  color: rebeccapurple;
+  text-align: center;
+  margin: 10px auto;
+  padding-top: 20px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  letter-spacing: 0.8px;
+}
+
+.section_heading span:nth-child(2) {
+  display: block;
+  margin: 6px auto;
+  width: 70px;
+  height: 4px;
+  border-radius: 10px;
+  background: darkslategrey;
+}
+
+/******** || CATEGORIES ********/
+.categories_box .card {
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px rgb(192, 192, 192);
+  -moz-box-shadow: 0px 0px 5px rgb(192, 192, 192);
+  box-shadow: 0px 0px 5px rgb(192, 192, 192);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.categories_box .card:hover {
+  transform: translateY(-7px);
+}
+
+.categories_box .card-title {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-size: x-large !important;
+  color: rebeccapurple;
+}
+
+/******** || FOOTER ********/
+footer {
+  background-color: rgb(88, 88, 88);
+  letter-spacing: 0.6px;
+}
+
+footer p {
+  color: gainsboro;
+  font-size: 15px;
+}
+
+a.social-link {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer span {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: large;
+  color: lightcoral;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icon:hover {
+  opacity: 0.5;
+}
