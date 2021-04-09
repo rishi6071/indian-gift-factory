@@ -97,6 +97,10 @@ body {
 }
 
 /******** || ABOUT US Page ********/
+#about_us {
+  text-align: center;
+}
+
 #about_us .about_image_container {
   position: relative;
 }
