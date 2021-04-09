@@ -135,6 +135,12 @@ body {
 }
 
 @media screen and (max-width: 575px) {
+  .categories_box,
+  .products_box {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .products_box .card-body {
     padding: 6px 7px 9px 7px;
   }
@@ -148,6 +154,7 @@ body {
     font-size: 20px !important;
   }
 
+  .categories_box img,
   .products_box img {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
