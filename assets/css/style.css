@@ -77,6 +77,11 @@ body {
   cursor: pointer;
 }
 
+.products_box .padding-0 {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .products_box .card {
   cursor: default;
 }
@@ -84,6 +89,18 @@ body {
 .categories_box .card:hover,
 .products_box .card:hover {
   transform: translateY(-7px);
+}
+
+.products_box .card-text {
+  color: #000000a9;
+  text-align: center;
+}
+
+.products_box .product-price {
+  color: #3da83d;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 500;
 }
 
 .categories_box .card-title,
@@ -94,6 +111,13 @@ body {
   font-variant: small-caps;
   font-size: x-large !important;
   color: rebeccapurple;
+}
+
+@media screen and (max-width: 767px) {
+  .products_box .card-body {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
 
 /******** || ABOUT US Page ********/

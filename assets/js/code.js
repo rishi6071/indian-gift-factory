@@ -221,7 +221,7 @@ const renderProducts = (category) => {
 
     category_products.forEach((product, id) => {
         const productCol = document.createElement('div');
-        productCol.className = "col-lg-4 col-sm-6 col-12 mt-4";
+        productCol.className = "col-lg-4 col-sm-6 col-6 mt-4 padding-0";
 
         const productCard = document.createElement('div');
         productCard.className = "card";
