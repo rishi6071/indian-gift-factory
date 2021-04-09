@@ -226,6 +226,7 @@ const renderProducts = (category) => {
         const productCard = document.createElement('div');
         productCard.className = "card";
         productCard.id = `product-${product.id}`;
+        productCard.setAttribute('data-aos', 'zoom-in');
 
         const productImg = document.createElement('img');
         productImg.src = product.src;
