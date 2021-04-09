@@ -12,6 +12,12 @@
     background-size: 20%;
 }
 
+@media screen and (max-width: 767px) {
+    .loading {
+        background-size: 50%;
+    }
+}
+
 /*  https://codetea.com/content/images/2017/09/Goo-Loader.gif
     https://profile.lps.org/images/loading-icon-2.gif
 */
