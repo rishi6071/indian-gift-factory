@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./assets/css/ripple.css" />
 </head>
 
-<body onload="getShopCategory()">
+<body onload="getShopCategory(); getCopyrightYear();">
     <!-- Preloader Start -->
     <div class="loading"></div>
 
@@ -97,7 +97,9 @@
     <!-- || Footer Start -->
     <footer class="py-1 pt-3 text-center">
         <div class="container-fluid">
-            <p>Copyright © 2020 by <span>Indian Gift Factory</span></p>
+            <p>Copyright © <span id="copyright_year">2020</span> by
+                <span class="brand_name">Indian Gift Factory</span>
+            </p>
         </div>
     </footer>
     <!-- || Footer End -->
@@ -116,15 +118,7 @@
 
     <!-- Animate on Scroll Library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            startEvent: 'DOMContentLoaded',
-            delay: 100,
-            duration: 1000,
-            once: true,
-            easing: 'ease'
-        });
-    </script>
+    <script src="./assets/js/aos.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="./assets/js/preloader.js"></script>

@@ -218,7 +218,7 @@ const getShopCategory = () => {
 const renderProducts = (category) => {
     const products_box = document.querySelector('.products_box');
     const category_products = products[category];
-    
+
     category_products.forEach((product, id) => {
         const productCol = document.createElement('div');
         productCol.className = "col-lg-4 col-sm-6 col-12 mt-4";
@@ -266,4 +266,10 @@ const renderProducts = (category) => {
             </div>
         </div>
      */
+}
+
+// Footer Copyright Year
+const getCopyrightYear = () => {
+    const copyright_year_box = document.querySelector('#copyright_year');
+    copyright_year_box.innerText = new Date().getFullYear();
 }

@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./assets/css/ripple.css" />
 </head>
 
-<body>
+<body onload="getCopyrightYear();">
     <!-- Preloader Start -->
     <div class="loading"></div>
 
@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="row categories_box">
-                        <div class="col-sm-6 col-12 mt-4" >
+                        <div class="col-sm-6 col-12 mt-4">
                             <div class="card" id="mug" data-aos="fade" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/mugs.jpg" class="card-img-top" alt="Mug Category" />
                                 <div class="card-body">
@@ -120,7 +120,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-12 mt-4" >
+                        <div class="col-sm-6 col-12 mt-4">
                             <div class="card" id="pillow" data-aos="fade" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/pillows.jpg" class="card-img-top"
                                     alt="Pillow Category" />
@@ -135,7 +135,7 @@
 
                         <div class="divider my-2"></div>
 
-                        <div class="col-sm-6 col-12 mt-4" >
+                        <div class="col-sm-6 col-12 mt-4">
                             <div class="card" id="inkpaper" data-aos="fade" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/inkPaper.jpg" class="card-img-top"
                                     alt="Ink/Paper Category" />
@@ -148,7 +148,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-12 mt-4" >
+                        <div class="col-sm-6 col-12 mt-4">
                             <div class="card" id="vinyl" data-aos="fade" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/vinyl.jpg" class="card-img-top"
                                     alt="Vinyl Category" />
@@ -188,7 +188,8 @@
                     <span class="banner_text_author">- Ratan Tata</span>
                 </p>
 
-                <p class="banner_text" data-aos="zoom-in">“Trust is the great simplifier. If people in business told the truth,
+                <p class="banner_text" data-aos="zoom-in">“Trust is the great simplifier. If people in business told the
+                    truth,
                     <br />
                     80 to 90% of their problems would disappear.”
                     <br />
@@ -288,7 +289,9 @@
     <!-- || Footer Start -->
     <footer class="py-1 pt-3 text-center">
         <div class="container-fluid">
-            <p>Copyright © 2020 by <span>Indian Gift Factory</span></p>
+            <p>Copyright © <span id="copyright_year">2020</span> by
+                <span class="brand_name">Indian Gift Factory</span>
+            </p>
         </div>
     </footer>
     <!-- || Footer End -->
@@ -306,15 +309,7 @@
 
     <!-- Animate on Scroll Library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            startEvent: 'DOMContentLoaded',
-            delay: 100,
-            duration: 1000,
-            once: true,
-            easing: 'ease'
-        });
-    </script>
+    <script src="./assets/js/aos.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="./assets/js/preloader.js"></script>
