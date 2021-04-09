@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300;1,400&display=swap');
 
 .navbar {
   -webkit-box-shadow: 0px 0px 4px grey;
@@ -10,7 +11,8 @@
   border: none;
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand,
+.offcanvas-title {
   font-weight: bolder;
   letter-spacing: 1px;
   color: rebeccapurple;
@@ -29,7 +31,8 @@
   color: darkslategrey;
 }
 
-.navbar .nav-item {
+.navbar .nav-item,
+.offcanvas .nav-item {
   letter-spacing: 1px;
   font-weight: 500;
   font-family: "Akaya Kanadaka", cursive;
@@ -37,8 +40,56 @@
   font-size: larger;
 }
 
+.navbar .dropdown-menu {
+  text-align: center;
+}
+
 @media screen and (min-width: 991px) {
   .navbar .navbar-brand {
     transform: translateY(-3.5px);
   }
+}
+
+/* *** Mobile SideBar Menu */
+.offcanvas {
+  text-align: center;
+}
+
+.offcanvas .btn-close {
+  -webkit-transform: translateX(-10px) translateY(14px);
+  -ms-transform: translateX(-10px) translateY(14px);
+  -moz-transform: translateX(-10px) translateY(14px);
+  transform: translateX(-10px) translateY(14px);
+}
+
+.offcanvas img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.offcanvas .owner_name,
+.offcanvas .owner_designation {
+  color: darkslategrey;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.offcanvas .owner_name {
+  margin-top: 15px;
+}
+
+.offcanvas .owner_designation {
+  font-style: italic;
+}
+
+.mobile_view_menu {
+  list-style-type: none;
+}
+
+.offcanvas-body a {
+  color: dimgrey;
 }

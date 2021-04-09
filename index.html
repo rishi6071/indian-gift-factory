@@ -37,11 +37,12 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light px-md-2" data-aos="fade-down">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">India Gift Factory</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="./index.html">India Gift Factory</a>
+                <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"
+                    data-bs-toggle="offcanvas" data-bs-target="#sideBar" aria-controls="sideBar">
+                    <span class="navbar-toggler-icon" type="button" aria-expanded="false" aria-label="Toggle navigation"
+                        data-bs-toggle="offcanvas" data-bs-target="#sideBar" aria-controls="sideBar">
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -72,6 +73,53 @@
         </nav>
     </header>
     <!-- || Header End -->
+
+
+    <!-- || Aside Bar for Mobile View Start -->
+    <aside>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sideBar"
+            aria-labelledby="sideBarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sideBarLabel">India Gift Factory</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="website_owner">
+                    <img src="./assets/img/owner/Rishi_Soni_Profile.jpg" alt="Website Owner" />
+                    <h4 class="owner_name">Rishi Soni</h4>
+                    <h6 class="owner_designation">- Owner</h6>
+                </div>
+
+                <hr/>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="product_cateogories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="product_cateogories">
+                            <li><a class="dropdown-item" href="./shop.html?category=mug">Mug</a></li>
+                            <li><a class="dropdown-item" href="./shop.html?category=pillow">Pillow</a></li>
+                            <li><a class="dropdown-item" href="./shop.html?category=vinyl">Vinyl</a></li>
+                            <li><a class="dropdown-item" href="./shop.html?category=inkpaper">Ink/Paper</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#to_contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- || Aside Bar for Mobile View End -->
 
 
     <!-- || Home Banner Start -->
@@ -108,8 +156,8 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="row categories_box">
-                        <div class="col-sm-6 col-12 mt-4">
-                            <div class="card" id="mug" data-aos="fade" onclick="categoryToProduct(this.id);">
+                        <div class="col-sm-6 col-12 mt-4" data-aos="fade">
+                            <div class="card ripple" id="mug" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/mugs.jpg" class="card-img-top" alt="Mug Category" />
                                 <div class="card-body">
                                     <h5 class="card-title">Mugs</h5>
@@ -120,8 +168,8 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-12 mt-4">
-                            <div class="card" id="pillow" data-aos="fade" onclick="categoryToProduct(this.id);">
+                        <div class="col-sm-6 col-12 mt-4" data-aos="fade">
+                            <div class="card ripple" id="pillow" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/pillows.jpg" class="card-img-top"
                                     alt="Pillow Category" />
                                 <div class="card-body">
@@ -135,8 +183,8 @@
 
                         <div class="divider my-2"></div>
 
-                        <div class="col-sm-6 col-12 mt-4">
-                            <div class="card" id="inkpaper" data-aos="fade" onclick="categoryToProduct(this.id);">
+                        <div class="col-sm-6 col-12 mt-4" data-aos="fade">
+                            <div class="card ripple" id="inkpaper" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/inkPaper.jpg" class="card-img-top"
                                     alt="Ink/Paper Category" />
                                 <div class="card-body">
@@ -148,8 +196,8 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-12 mt-4">
-                            <div class="card" id="vinyl" data-aos="fade" onclick="categoryToProduct(this.id);">
+                        <div class="col-sm-6 col-12 mt-4" data-aos="fade">
+                            <div class="card ripple" id="vinyl" onclick="categoryToProduct(this.id);">
                                 <img src="./assets/img/categories/vinyl.jpg" class="card-img-top"
                                     alt="Vinyl Category" />
                                 <div class="card-body">

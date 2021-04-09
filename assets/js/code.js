@@ -188,27 +188,32 @@ var products = {
 const getShopCategory = () => {
 
     const dropdown_box = document.querySelectorAll('#category_box a.dropdown-item');
+    const mobile_view_box = document.querySelectorAll('#mobile_view_categories a.dropdown-item');
     const category_heading = document.querySelector('#category_heading');
     const index = location.href.indexOf("category");
     let url = location.href.substring(index + 9);
 
     if (url === 'mug') {
         dropdown_box[0].classList.add('active');
+        mobile_view_box[0].classList.add('active');
         category_heading.innerText = "Mug's";
         renderProducts('mug');
     }
     else if (url === 'pillow') {
         dropdown_box[1].classList.add('active');
+        mobile_view_box[1].classList.add('active');
         category_heading.innerText = "Pillow's";
         renderProducts('pillow');
     }
     else if (url === 'vinyl') {
         dropdown_box[2].classList.add('active');
+        mobile_view_box[2].classList.add('active');
         category_heading.innerText = "Vinyl's";
         renderProducts('vinyl');
     }
     else {
         dropdown_box[3].classList.add('active');
+        mobile_view_box[3].classList.add('active');
         category_heading.innerText = "Ink-Paper's";
         renderProducts('inkpaper');
     }
@@ -222,11 +227,11 @@ const renderProducts = (category) => {
     category_products.forEach((product, id) => {
         const productCol = document.createElement('div');
         productCol.className = "col-lg-4 col-sm-6 col-6 mt-4 padding-0";
+        productCol.setAttribute('data-aos', 'zoom-in');
 
         const productCard = document.createElement('div');
-        productCard.className = "card";
+        productCard.className = "card ripple";
         productCard.id = `product-${product.id}`;
-        productCard.setAttribute('data-aos', 'zoom-in');
 
         const productImg = document.createElement('img');
         productImg.src = product.src;
