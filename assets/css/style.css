@@ -77,9 +77,14 @@ body {
   cursor: pointer;
 }
 
+.products_box .card-body {
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
 .products_box .padding-0 {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .products_box .card {
@@ -91,9 +96,11 @@ body {
   transform: translateY(-7px);
 }
 
+.categories_box .card-text,
 .products_box .card-text {
   color: #000000a9 !important;
   text-align: center;
+  font-size: smaller;
 }
 
 .categories_box img {
