@@ -55,6 +55,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 575px) {
+  .offcanvas {
+    width: 100%;
+  }
+}
+
 .offcanvas .btn-close {
   -webkit-transform: translateX(-10px) translateY(14px);
   -ms-transform: translateX(-10px) translateY(14px);
@@ -63,7 +69,7 @@
 }
 
 .offcanvas img {
-  width: 40%;
+  width: 43%;
   height: auto;
   display: block;
   margin: auto;
